@@ -135,7 +135,12 @@ body{
     grid-template-columns: repeat(2,1fr);
     border-radius: 10px;
     gap:20px;
+    width: 50%;
     
+}
+
+.feature-img img{
+    width: 100%;
 }
 
 .quick-features-info{ 
