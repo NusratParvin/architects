@@ -71,7 +71,6 @@ body{
 .banner-name{
     font-weight: 700;
     font-size: 50px;
-    line-height: 60px;
     text-align: center;
     color: #131313;
     margin: 20px 0;
@@ -189,7 +188,7 @@ body{
 }
 
 .feature-description{
-    width: 60%;
+    width: 50%;
 }
 
 .feature-img img{
@@ -197,15 +196,13 @@ body{
 }
 
 .feature-img button{
-    position: absolute;
+    position: absolute ;
     bottom: -7%;
-    left: -7%;
+    left: -7%; 
 }
 
 .feature-img{
-    width: 50%; 
-    position: relative;
-    background-image: url(../images/architect.png);
+    width: 50%; position: relative;
 }
 
 .feature-title{
@@ -277,7 +274,7 @@ body{
 }
 
 .fact{
-    border-radius:8px;
+    border-radius:20px;
     border:1px solid #FD6E0A;
     text-align: center;
     padding: 30px 40px;
@@ -367,17 +364,32 @@ body{
 
 @media screen and (max-width:576px) {
 
+ .header-section { 
+    padding-bottom: 30px;
+    border-bottom: 1px solid darkgray;
+   
+ }
     .header , .nav ul{
         flex-direction: column;
         text-align: center;
+    }
+
+    .header-name{
+        font-size: 30px;
     }
 
     .nav ul li {
         margin: 20px 0 5px 0;
     }
 
-    .banner-name, .feature-header, .quick-feature-title, .feature-title{
-        font-size:30px;
+    .header-banner, .banner-info, 
+    .main-container, .sponsors-info{
+        width: 95%;
+    }
+
+    .banner-name, .feature-header, .quick-feature-title, 
+    .feature-title, .fact-title, .fact-number, .sponsor-title{
+        font-size:26px;
     }
 
     .quick-features, .facts-list{
@@ -388,9 +400,9 @@ body{
        grid-template-columns: repeat(1,1fr);
     }
 
-    .feature-detail{
-        text-align: center; 
-    }
+    /* .feature-detail{
+        text-align: left; 
+    } */
 
     .feature-title{
         width:98%; 
@@ -398,21 +410,33 @@ body{
         margin-right: 0;
     }
 
+    .features-list{
+    flex-direction: column-reverse ;
+    gap: 30px; 
+    }
+
+    .feature-img, .feature-description{
+        width: 100%;
+    }
+
+    .feature-img button{
+        position: inherit;
+        width: 95%;
+    }
+
     .facts-info{
         text-align: center;
     }
+.facts-list{
+    gap: 30px;width: 100%;
+    align-items: center;
+}
+
      .sponsors-list{
         flex-direction: column;
-    }
-
-    .sponsors-info{
-        width: 80%;
-
-    }
-
-    .sponsors-list{
         width: 50%;
-        margin: 60px auto;
+        margin: 40px auto;
+        gap:30px;
     }
 
     .sponsors-list img{
